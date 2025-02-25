@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --c1: #0A0A0A;
+    --c2: #FEF9F9;
+    --c3: #C80000;
+    --f1: 'Playfair Display';
+    --f2: 'Figtree';
+    --f3: 'Pinyon Script';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: .3s;
+}
+
+@media (min-width: 0) {
+    body {
+        font-size: .7rem;
+    }
+
+    #logo {
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 650px) {
+    body {
+        font-size: 1rem;
+    }    
+
+    #logo {
+        font-size: 6rem;
+    }
+}
+
+body {
+    background-color: var(--c1);
+    color: var(--c3);
+    height: 200vh;
+}
+
+/* HEADER AND NAVBAR */
+
+header, nav {
+    font-family: var(--f2);
+    padding: 0 5vw;
+    h5 {
+        margin: 1rem 0;
+    }
+}
+
+#top {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+#loginAndBagWrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#logo, #miniLogo {
+    font-family: var(--f1);
+    font-weight: 400;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navOptions {
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
+
+.linkHeader {
+    color: var(--c3);
+    text-decoration: none;
+}
+
+.linkHeader:visited {
+    color: inherit;
+}
+
+.linkHeader:hover {
+    color: var(--c2);
+}
+
+.bagPath {
+    stroke: var(--c3);
+}
+
+.bagWrapper {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
