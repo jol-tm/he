@@ -7,12 +7,12 @@
     --f1: 'Playfair Display';
     --f2: 'Figtree';
     --f3: 'Pinyon Script';
+    scroll-behavior: smooth;
 }
 
 * {
     margin: 0;
     padding: 0;
-    transition: .3s;
 }
 
 @media (min-width: 0) {
@@ -38,7 +38,6 @@
 body {
     background-color: var(--c1);
     color: var(--c3);
-    height: 200vh;
 }
 
 /* HEADER AND NAVBAR */
@@ -53,15 +52,14 @@ header, nav {
 
 #top {
     display: flex;
-    justify-content: space-between;
-    align-items: end;
+    justify-content: center;
 }
 
-#loginAndBagWrapper {
+/* #loginAndBagWrapper {
     display: flex;
     align-items: center;
     gap: 1rem;
-}
+} */
 
 #logo, #miniLogo {
     font-family: var(--f1);
@@ -82,16 +80,16 @@ nav {
     gap: 5vw;
 }
 
-.linkHeader {
-    color: var(--c3);
+a {
     text-decoration: none;
+    transition: .3s;
 }
 
-.linkHeader:visited {
-    color: inherit;
+.headerLink {
+    color: var(--c3);
 }
 
-.linkHeader:hover {
+.headerLink:hover {
     color: var(--c2);
 }
 
@@ -103,4 +101,49 @@ nav {
     display: flex;
     align-items: center;
     gap: .4rem;
+}
+
+footer {
+    font-family: var(--f1);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 3rem;
+    background-color: var(--c3);
+    color: var(--c1);
+}
+
+#footerContentBox {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.footerDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footerDiv:nth-of-type(2) {
+    margin: 3rem 0 0 0;
+}
+
+.footerLink {
+    font-family: var(--f2);
+    color: var(--c1);
+}
+
+.footerLink:hover {
+    text-decoration: underline;
+}
+
+#footerLogo {
+    display: flex;
+    align-items: baseline;
+    gap: .5rem;
+    p {
+        font-family: var(--f2);
+    }
 }
