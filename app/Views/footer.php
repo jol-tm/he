@@ -18,5 +18,6 @@
             <h2>H.E.</h2><p>© 2025</p>
         </div>
     </footer>
+    <script src="<?= base_url('script.js'); ?>"></script>
 </body>
 </html>
