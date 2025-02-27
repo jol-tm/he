@@ -22,7 +22,7 @@
     </header>
     <nav>
         <div id="navOptions">
-            <a href="<?= current_url() == base_url() . 'index.php/' ? '#top' : base_url('/'); ?>" class="headerLink"><h5>INÍCIO</h5></a>
+            <a href="<?= current_url() == base_url() . 'index.php/' ? '#' : base_url('/'); ?>" class="headerLink"><h5>INÍCIO</h5></a>
             <a href="" class="headerLink"><h5>SHOP</h5></a>
             <a href="#contacts" class="headerLink"><h5>CONTATOS</h5></a>
             <h5 id="" class="headerLink">ENTRAR</h5>
@@ -33,5 +33,5 @@
                 </div>
             </a>
         </div>
-        <a href="<?= current_url() == base_url() . 'index.php/' ? '#top' : base_url('/'); ?>" class="headerLink"><h2 id="miniLogo">H.E.</h3></a>
+        <a href="<?= current_url() == base_url() . 'index.php/' ? '#' : base_url('/'); ?>" class="headerLink"><h2 id="miniLogo">H.E.</h3></a>
     </nav>
