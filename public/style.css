@@ -102,9 +102,8 @@ nav {
     align-items: center;
     justify-content: space-between;
     width: 90%;
-    background-color: var(--c1);
-    /* background-color: rgba(10, 10, 10, 0.85);
-    backdrop-filter: blur(10px); */
+    background-color: #0a0a0ae6;
+    backdrop-filter: blur(5px);
     transition: .3s;
 }
 
@@ -174,10 +173,17 @@ a {
     flex-wrap: wrap;
     background-color: var(--c2);
     margin: 5%;
-    padding: 5%;
+    padding: 4rem;
+    opacity: 0;
+    transition: .3s;
     h1 {
         font-weight: 400;
     }
+}
+
+#collectionIntro:hover {
+    scale: 1.01;
+    padding: 4.5rem;
 }
 
 .collectionDiv {
@@ -190,6 +196,77 @@ a {
     }
 }
 
+/* ADJECTIVES BANNER SECTION */
+
+#adjectivesBanner {
+    font-family: var(--f1);
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--c3);
+    color: var(--c1);
+    margin: 4rem 0;
+    padding: 4rem 7rem 7rem 7rem;
+    div {
+        display: flex;
+        justify-content: space-around;
+        gap: 1rem;
+        padding: 2rem 0 .5rem 0;
+    }
+    hr {
+        color: var(--c1);
+    }
+}
+
+/* COLLECTION PREVIEW SECTION */
+
+#collectionPreview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    background-color: var(--c2);
+    margin: 5%;
+    padding: 4rem;
+    a {
+        font-family: var(--f2);
+        color: var(--c1);
+    }
+    a:hover {
+        font-weight: 700;
+    }
+}
+
+#carrosel {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.cardProduct {
+    font-family: var(--f2);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem;
+    color: var(--c1);
+    box-shadow: 0 .3rem 1rem #00000030;
+    transition: .3s;
+    img {
+        width: 15rem;
+    }
+    div {
+        display: flex;
+        gap: 3rem;
+    }
+}
+
+.cardProduct:hover {
+    box-shadow: 0 .3rem 1rem #00000060;
+}
+
 /* FOOTER */
 
 footer {
@@ -197,10 +274,13 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 5rem;
+    gap: 2rem;
     padding: 3rem;
     background-color: var(--c3);
     color: var(--c1);
+    h5 {
+        font-family: var(--f2);
+    }
 }
 
 #footerContentBox {
@@ -220,12 +300,12 @@ footer {
     margin: 3rem 0 0 0;
 }
 
-.footerLink {
+.footerLink, #dev {
     font-family: var(--f2);
     color: var(--c1);
 }
 
-.footerLink:hover {
+.footerLink:hover, #dev:hover {
     text-decoration: underline;
 }
 
@@ -235,5 +315,15 @@ footer {
     gap: .5rem;
     p {
         font-family: var(--f2);
+    }
+}
+
+@keyframes zoom {
+    from {
+        scale: .8;
+        opacity: 0;
+    } to {
+        scale: 1;
+        opacity: 1;
     }
 }

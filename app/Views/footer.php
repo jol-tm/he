@@ -17,6 +17,7 @@
         <div id="footerLogo">
             <h2>H.E.</h2><p>© 2025</p>
         </div>
+        <a href="https://github.com/jol-tm" target="_blank"><h5 id="dev">Website developed by jol-tm</h5></a>
     </footer>
     <script src="<?= base_url('script.js'); ?>"></script>
 </body>

@@ -1,12 +1,14 @@
 window.addEventListener('scroll', navControl);
 
+const nav = document.querySelector('nav');
+const collectionIntro = document.querySelector('#collectionIntro');
+
 function navControl() 
 {
-    const nav = document.querySelector('nav');
-
     if (window.scrollY > 135)
     {
         nav.style.top = '-4.5rem';
+        collectionIntro.style.animation = 'zoom 1s forwards';
     }
     else
     {
