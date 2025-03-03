@@ -102,8 +102,8 @@ nav {
     align-items: center;
     justify-content: space-between;
     width: 90%;
-    background-color: #0a0a0ae6;
-    backdrop-filter: blur(5px);
+    background-color: hsla(0, 0%, 4%, 0.8);
+    backdrop-filter: blur(7px);
     transition: .3s;
 }
 
@@ -182,8 +182,8 @@ a {
 }
 
 #collectionIntro:hover {
-    scale: 1.01;
-    padding: 4.5rem;
+    transform: scale(1.01);
+    padding: 4.3rem;
 }
 
 .collectionDiv {
@@ -214,13 +214,14 @@ a {
         padding: 2rem 0 .5rem 0;
     }
     hr {
-        color: var(--c1);
+        border: 1px solid var(--c1);
     }
 }
 
 /* COLLECTION PREVIEW SECTION */
 
 #collectionPreview {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -237,10 +238,16 @@ a {
     }
 }
 
-#carrosel {
+#slider {
     display: flex;
-    justify-content: space-evenly;
+    gap: 6rem;
     width: 100%;
+    padding: 1rem;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: var(--c3) var(--c2);
+    scroll-snap-type: x mandatory;
+    box-shadow: 0 0 1rem white inset;
 }
 
 .cardProduct {
@@ -250,12 +257,14 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 3rem;
-    padding: 3rem;
+    padding: 3vw 5vw;
     color: var(--c1);
-    box-shadow: 0 .3rem 1rem #00000030;
+    box-shadow: 0 0 1rem #00000030;
+    scroll-snap-align: center;
     transition: .3s;
     img {
-        width: 15rem;
+        width: 40vw;
+        max-width: 15rem;
     }
     div {
         display: flex;
@@ -264,7 +273,7 @@ a {
 }
 
 .cardProduct:hover {
-    box-shadow: 0 .3rem 1rem #00000060;
+    box-shadow: 0 0rem 1rem #00000060;
 }
 
 /* FOOTER */

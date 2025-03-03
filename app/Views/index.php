@@ -35,13 +35,13 @@
     <hr>
 </section>
 <section id="collectionPreview">
-    <div id="carrosel">
+    <div id="slider">
         <a href="<?= base_url('shop/item') . "/:(num)"; ?>">
             <div class="cardProduct">
                 <img src="imgs/img2.png" alt="">
                 <div>
                     <h4>Regata alfaiataria</h4>
-                    <h4>R$ 65,00</h4>
+                    <h5>R$ 65,00</h5>
                 </div>
             </div>
         </a>
@@ -50,7 +50,25 @@
                 <img src="imgs/img2.png" alt="">
                 <div>
                     <h4>Regata alfaiataria</h4>
-                    <h4>R$ 65,00</h4>
+                    <h5>R$ 65,00</h5>
+                </div>
+            </div>
+        </a>
+        <a href="<?= base_url('shop/item') . "/:(num)"; ?>">
+            <div class="cardProduct">
+                <img src="imgs/img2.png" alt="">
+                <div>
+                    <h4>Regata alfaiataria</h4>
+                    <h5>R$ 65,00</h5>
+                </div>
+            </div>
+        </a>
+        <a href="<?= base_url('shop/item') . "/:(num)"; ?>">
+            <div class="cardProduct">
+                <img src="imgs/img2.png" alt="">
+                <div>
+                    <h4>Regata alfaiataria</h4>
+                    <h5>R$ 65,00</h5>
                 </div>
             </div>
         </a>
