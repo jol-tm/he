@@ -1,7 +1,10 @@
-window.addEventListener('scroll', navControl);
-
 const nav = document.querySelector('nav');
 const collectionIntro = document.querySelector('#collectionIntro');
+const slider = document.querySelector('#slider');
+
+window.addEventListener('scroll', navControl);
+document.querySelector('#leftBtn').addEventListener('click', slideLeft);
+document.querySelector('#rightBtn').addEventListener('click', slideRight);
 
 function navControl() 
 {
@@ -14,4 +17,14 @@ function navControl()
     {
         nav.style.top = '-7.5rem';
     }
+}
+
+function slideLeft()
+{
+    slider.scrollBy(-300, 0);
+}
+
+function slideRight()
+{
+    slider.scrollBy(300, 0);
 }

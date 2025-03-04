@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=chevron_left,chevron_right,close"/>
     <link rel="stylesheet" href="<?= base_url('style.css'); ?>">
+    <link rel="shortcut icon" href="https://i.ibb.co/PdPJD7f/favicon.png" type="image/x-icon">
     <title>H.E.</title>
 </head>
 <body>
