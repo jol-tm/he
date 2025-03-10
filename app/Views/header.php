@@ -11,13 +11,13 @@
 <body>
     <header id="top">
         <a href="#contacts" class="headerLink"><h5>CONTATOS</h5></a>
-        <a href="#" class="headerLink"><h1 id="logo">H.E.</h1></a>
+        <a href="<?= current_url() == base_url() . 'index.php/' ? '#' : base_url('/'); ?>" class="headerLink"><h1 id="logo">H.E.</h1></a>
         <div id="loginAndBagWrapper">
             <h5 class="headerLink">ENTRAR</h5>
-            <a href="" class="headerLink">
+            <a href="checkout" class="headerLink">
                 <div class="bagWrapper">
                     <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="bagPath" d="M5.5 8.5C5.5 2.5 6.26293 0.5 9.5 0.5C12.7371 0.5 13.5 2.5 13.5 8.5M9.5 5H1.5L1 19H9.5H18L17.5 5H9.5Z" stroke="black" stroke-linejoin="round"/></svg>
-                    <div class="bagAmount">(0)</div>
+                    <div class="quantityBag">(0)</div>
                 </div>
             </a>
         </div>
@@ -28,10 +28,10 @@
             <a href="<?= base_url('shop'); ?>" class="headerLink"><h5>SHOP</h5></a>
             <a href="#contacts" class="headerLink"><h5>CONTATOS</h5></a>
             <h5 id="" class="headerLink">ENTRAR</h5>
-            <a href="" class="headerLink">
+            <a href="checkout" class="headerLink">
                 <div class="bagWrapper">
                     <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="bagPath" d="M5.5 8.5C5.5 2.5 6.26293 0.5 9.5 0.5C12.7371 0.5 13.5 2.5 13.5 8.5M9.5 5H1.5L1 19H9.5H18L17.5 5H9.5Z" stroke="black" stroke-linejoin="round"/></svg>
-                    <div class="bagAmount">(0)</div>
+                    <div class="quantityBag">(0)</div>
                 </div>
             </a>
         </div>
