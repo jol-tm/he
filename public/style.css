@@ -69,7 +69,7 @@ body {
     align-items: center;
     background-color: var(--color-tertiary);
     margin: 5%;
-    padding: 4rem;
+    padding: 3rem;
 }
 
 /* HEADER AND NAVBAR */
@@ -81,6 +81,22 @@ header, nav {
     h5 {
         margin: 1rem 0;
     }
+}
+
+#popUpLogin {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+    width: 90vw;
+    margin: auto;
+    max-width: 50rem;
+    border: 1px solid white;
 }
 
 #top {
@@ -372,6 +388,7 @@ a {
 
     button:hover {
         text-decoration: underline;
+        cursor: pointer;
     }
 }
 
@@ -379,8 +396,11 @@ a {
 
 #checkout {
     font-family: var(--font-primary);
-    align-items: start;
     gap: 1rem;
+
+    h1 {
+        align-self: start;
+    }
 
     hr {
         border: 1px solid var(--color-primary);
@@ -400,7 +420,13 @@ a {
     font-family: var(--font-secondary);
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 1rem;
+
+    p {
+        color: var(--color-secondary);
+        font-size: .7rem;
+        margin: -.7rem 0 0 0;
+    }
 }
 
 .checkoutInfoRow {
@@ -419,6 +445,24 @@ a {
     gap: 1rem;
     margin: 0 0 2rem 0;
     color: var(--color-secondary);
+
+    img {
+        min-width: 7rem;
+        width: 15vw;
+        max-width: 20rem;
+    }
+}
+
+#endPurchaseBtn, #keepShoppingBtn {
+    text-align: center;
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+    padding: .5rem;
+    font-weight: 600;
+}
+
+#endPurchaseBtn:hover, #keepShoppingBtn:hover {
+    color: var(--color-tertiary);
 }
 
 /* FOOTER */
