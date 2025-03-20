@@ -23,7 +23,7 @@ if (buyBtns != null)
 
 if (itemsDisplay != null)
 {
-    displayItems();
+    //displayItems();
 }
 
 window.addEventListener('scroll', navControl);
@@ -95,12 +95,11 @@ function displayItems()
         itemsDisplay.innerHTML += `
             <div class="item">
                 <svg width="176" height="254" viewBox="0 0 176 254" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="176" height="254" fill="#F2F2F2"/>
+                    <rect width="176" height="254" fill="#e2e2e2"/>
                 </svg>
                 <div class="description">
-                    <h5>${item.name}</h5>
+                    <h5>${item.name} | M | Verde</h5>
                     <h5>${item.quantity} ${item.quantity > 1 ? 'unidades' : 'unidade'}</h5>
-                    <h5>M</h5>
                     <h5>R$70,00</h5>
                 </div>
             </div>
@@ -108,5 +107,5 @@ function displayItems()
     });
 }
 
+//localStorage.removeItem('shoppingCart');
 updateQuantityBag();
-// localStorage.removeItem('shoppingCart');
